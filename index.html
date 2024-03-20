@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Transitional//ES" "http://w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo_bdb.svg" type="image/x-icon">
+    <title>Banco de Bogota</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;            
+        }
+        header{
+            background-color: #F1CD3D;
+        }
+        .header{
+            font-weight: 300;
+            display: flex;
+            justify-content: space-between;
+            margin: 0% 2% 1% 2%;
+        }
+        .header div{
+            display: flex;
+        }
+        #bank{
+            width: 8%;
+            margin-right: 6px;
+        }
+        #aval{
+            width: 6%;
+        }
+        #banner{
+            background-image: url('./img/fondo.svg');
+            background-size: contain;
+            background-position: center;   
+            background-repeat: no-repeat; 
+            height: 70vh;
+        }
+        #banner2{
+            display: none;
+        }
+        .participa{
+            background-color: #0A00B4;
+            color: #F1CD3D;
+            width: 9%;
+            height: 6%;
+            border-radius: 5px;
+            font-size: medium;
+            font-weight: 400;
+            position: absolute;
+            left: 15%;
+            bottom: 30%;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .participa:hover {
+            transform: scale(1.1); 
+        }
+        
+        .participa:active {
+            transform: scale(1.05); 
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 5% 0 5%;
+            text-align: center;
+        }
+        section h1{
+            color: #F1CD3D;
+            margin-top: 2%;
+        }
+        .ganar{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .ganar div{
+            width: 15%;
+        }
+        footer{
+            margin-top: 5%;
+            padding: 3%;
+            background-color: #F1CD3D;
+            display: flex;
+            flex-direction: column;
+        }
+        .bdb{
+            width: 50%;
+            margin: auto;
+        }
+        .social{
+            margin: 3% 0 3% 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .social a{
+            transition: transform 0.3s;
+        }
+        .social a:hover {
+            transform: rotate(10deg); 
+        }
+        .social a:active {
+            transform: rotate(-15deg);  
+        }
+        footer h5{
+            margin: auto;
+        }
+        footer p{
+            font-size: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .header{
+                display: none;
+            }
+            #banner{
+                display: none;
+            }
+            #banner2{
+                display: block;
+                background-image: url('./img/phone11.svg');
+                background-size: contain;
+                background-position: initial; 
+                background-repeat: no-repeat; 
+                height: 40vh;
+            }
+            .participa {
+                width: 30%;
+                position: absolute;
+                left: 10%;
+                bottom: 62%;
+            }
+            section{
+                height: 900px;
+            }
+            .ganar div{
+                width: 35%;
+            }
+            .tres{
+                position: absolute;
+                bottom: -30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img id="bank" src="./img/logo_bdb.svg" alt="Logo Banco de Bogota">
+                <h5>Bancodebogota.com</h5>
+            </div>            
+            <img id="aval" src="./img/aval.svg" alt="">
+        </div>
+        <div id="banner2">
+        </div>
+        <div id="banner">
+            
+        </div><a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas"><button class="participa" >Participa aquí</button></a>
+    </header>
+    <section>
+        <div>
+            <h1>Hola, Juan Diego</h1>
+            <p>lLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                </p>
+        </div>
+        <div>
+            <h1>Ganar es muy fácil, sigue estos pasos</h1>
+            <div class="ganar">
+                <div>
+                    <h1>1</h1>
+                    <p>Inscribete bancodebogota .com/aguinaldos</p>
+                </div>
+                <div>
+                    <h1>2</h1>
+                    <p>Acumula puntos con cada transacción que generes en el bimestre.</p>
+                </div>
+                <div class="tres">
+                    <h1>3</h1>
+                    <p>Si acumulas la mayor cantidad de puntos en el bimestre, podrás ser un ganador.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img class="bdb" src="./img/bdb.svg" alt="banco de bogota">
+        <div class="social">
+            <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas"><img src="./img/facebook.svg" alt="facebook"></a>
+            <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas"><img src="./img/whatsapp.svg" alt="whatsapp"></a>
+            <a href=""><img src="./img/instagram.svg" alt="instagram"></a>
+            <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas"><img src="./img/twitter.svg" alt="twitter"></a>
+            <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas"><img src="./img/youtube.svg" alt="youtube"></a>
+            <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/personas"><img src="./img/linkedin.svg" alt="linkedin"></a>
+        </div>
+        <h5>Por tu seguridad recuerda:</h5>
+        <p>Recuerde que por su seguridad el Banco de Bogota nunca solicita a través de este medio información confidencial o financiera como usuarios y claves de acceso a nuestros canales, ni números de productos como cuentas, números de tarjetas de crédito o similares.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+
+    </footer>
+</body>
+</html>
